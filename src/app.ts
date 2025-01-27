@@ -1,3 +1,9 @@
+import { Todo } from "todo";
 export class App {
-  public message = 'Hello World!';
+  todo:Todo;
+  message:string;
+  constructor(){
+    this.message = 'Hello Manu!';
+    this.todo=new Todo("clean the room");
+  }
 }

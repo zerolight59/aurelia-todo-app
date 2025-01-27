@@ -1,3 +1,8 @@
 <template>
   <h1>${message}</h1>
+  <ul>
+    <li> <input type="checkbox" checked.bind="todo.done"> 
+        <span css="text-decoration : ${todo.done ? 'line-through' : 'none' }">${todo.description}</span>
+    </li>
+  </ul>
 </template>
